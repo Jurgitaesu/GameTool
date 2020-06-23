@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Orientacines.lt</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="col-12 col-sm-12 col-md-12 col-xl-12">
+            <img src="./IMG/logo.png" alt="logotipas" class="logo center">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="pb-3 mt-5">
+                <form action="#">
+                    <div class="form-group">
+                        <h4 class="text-center my-3">Įveskite kodą:</h4>
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <input type="text" id="kodas" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 mx-auto py-1">
+                                <p id="tekstasPavyko"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="col-3 btn btn-warning text-white mb-2 mx-auto" id="btn">Pateikti</button></div>
+                    </div>
+                </form>
+
+                <!--                TEKSTAS-->
+                <div class="hide col-12 col-sm-12 col-md-12 col-xl-12" id="tekstas">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laboriosam accusamus inventore nobis maxime, libero ex </p>
+                    <p class="text-warning text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, laudantium.</p>
+                    <p class="text-success text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, laudantium.</p>
+                    <p class="text-danger text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolore nihil magnam unde vel velit neque mollitia atque minus inventore qui obcaecati repudiandae soluta sint officia similique cupiditate, provident perferendis dignissimos, odio quam eligendi aperiam! Itaque rem iste placeat maiores, officiis quo, consequatur nesciunt, sapiente ex labore tenetur sed quam!</p>
+                    <p class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur velit nemo voluptates fugiat similique incidunt nesciunt et sunt iure quas.</p>
+                    <p class="font-italic">Lorem ipsum dolor sit amet.</p>
+                    <p class="text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, libero.</p>
+                    <div class="card-body text-center">
+                        <p class="card-text text-success mt-2">Kodas <span id="kodoNumerisTekstas"></span>teisingas</p>
+                        <a href="./index.html" class="btn btn-warning text-white">Įvesti kitą kodą</a>
+                    </div>
+                </div>
+
+                <!--                TEKSTAS SU NUORODA-->
+                <div class="hide text-center col-12 col-sm-12 col-md-12 col-xl-12" id="tekstasNuoroda">
+                    <a href="#" target="_blank" id="tekstasNuorodaUrl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laboriosam accusamus inventore nobis maxime, libero ex </a>
+                    <div class="card-body text-center">
+                        <p class="card-text text-success mt-2">Kodas <span id="kodoNumerisTekstasNuoroda"></span>teisingas</p>
+                        <a href="./index.html" class="btn btn-warning text-white">Įvesti kitą kodą</a>
+                    </div>
+                </div>
+
+                <!--                PAVEIKSLĖLIS-->
+                <div class="card hide mx-auto col-12 col-sm-12 col-md-12 col-xl-12" id="paveikslelis">
+                    <img src="#" href="https://orientacines.lt/" target="_blank" class="card-img rounded-0" alt="" id="paveikslelioSaltinis">
+                    <div class="card-body text-center">
+                        <p class="card-text text-success mt-2">Kodas <span id="kodoNumeris"></span>teisingas</p>
+                        <a href="./index.html" class="btn btn-warning text-white">Įvesti kitą kodą</a>
+                    </div>
+                </div>
+
+                <!--                PAVEIKSLĖLIS SU NUORODA-->
+                <div class="card hide mx-auto col-12 col-sm-12 col-md-12 col-xl-12" id="paveikslelisNuoroda">
+                    <a href="#" target="_blank" id="paveikslelisNuorodaHref">
+                        <img src="#" class="card-img rounded-0" alt="" id="paveikslelisNuorodaSaltinis"></a>
+                    <div class="card-body text-center">
+                        <p class="card-text text-success mt-2">Kodas <span id="kodoNumerisNuoroda"></span>teisingas</p>
+                        <a href="./index.html" class="btn btn-warning text-white">Įvesti kitą kodą</a>
+                    </div>
+                </div>
+
+                <!--                  GIF-->
+                <div class="hide mx-auto col-12 col-sm-12 col-md-12 col-xl-12" id="gif">
+                    <img src="#" class="col-6 mx-auto d-block" alt="" id="gifPaveikslelis">
+                    <div class="card-body text-center">
+                        <p class="card-text text-success mt-2">Kodas <span id="kodoNumerisGif"></span>teisingas</p>
+                        <a href="./index.html" class="btn btn-warning text-white">Įvesti kitą kodą</a>
+                    </div>
+                </div>
+
+                <!--                AUDIO-->
+                <div class="hide text-center" id="audio">
+                    <audio id="audioIrasas" controls>
+                        <source src="#" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p class="text-center text-success mt-2">Kodas <span id="kodoNumerisAudio"></span>teisingas</p>
+                    <a href="./index.html" class="btn btn-warning text-white">Įvesti kitą kodą</a>
+                </div>
+
+                <!--                VIDEO-->
+                <div class="hide text-center" id="video">
+                    <video class="embed-responsive embed-responsive-16by9" id="videoIrasas" controls>
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <p class="text-center text-success mt-2">Kodas <span id="kodoNumerisVideo"></span>teisingas</p>
+                    <a href="./index.html" class="btn btn-warning text-white">Įvesti kitą kodą</a>
+                </div>
+
+                <!--                YOUTUBE-->
+                <div class="hide text-center" id="youtube1">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/I7a6aYHdlk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-center text-success mt-2">Kodas <span id="kodoNumerisYoutube1"></span>teisingas</p>
+                    <a href="./index.html" class="btn btn-warning text-white">Įvesti kitą kodą</a>
+                </div>
+
+                <div class="hide text-center" id="youtube2">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/glSgqgO-qow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-center text-success mt-2">Kodas <span id="kodoNumerisYoutube2"></span>teisingas</p>
+                    <a href="./index.html" class="btn btn-warning text-white">Įvesti kitą kodą</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
